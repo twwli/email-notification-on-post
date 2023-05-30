@@ -11,8 +11,8 @@ function send_email_notification($post_ID)  {
     $post = get_post($post_ID);
     $author = get_userdata($post->post_author);
 
-    $subject = "Auf Ihrer Seite wurde ein neuer Artikel veröffentlicht.";
-    $message = "Auf Ihrer Seite wurde ein neuer Artikel veröffentlicht. Bitte überprüfen Sie ihn :\n\n";
+    $subject = "Bitte schaue dir diesen Artikel an.";
+    $message = "Bitte schaue dir diesen Artikel an. Bitte überprüfen Sie ihn :\n\n";
     $message .= $post->post_title . "\n\n";
     $message .= get_permalink($post_ID);
 
